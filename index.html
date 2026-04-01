@@ -12,7 +12,7 @@
       color: #2b2b2b;
     }
     .wrap {
-      max-width: 960px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 64px 24px;
       text-align: center;
@@ -21,44 +21,86 @@
       font-size: 42px;
       margin-bottom: 12px;
     }
-    p {
+    .subtitle {
       font-size: 18px;
       color: #666;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
     }
     .card {
-      margin: 40px auto 0;
-      max-width: 420px;
       background: #fff;
       border-radius: 18px;
-      padding: 28px;
+      padding: 28px 24px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .card h2 {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+    .tag {
+      font-size: 14px;
+      color: #8a8a8a;
+      margin-bottom: 14px;
+    }
+    .desc {
+      font-size: 17px;
+      color: #666;
+      line-height: 1.8;
+      min-height: 72px;
     }
     .price {
-      font-size: 28px;
-      margin: 16px 0;
+      font-size: 32px;
+      margin: 18px 0;
       color: #111;
+      font-weight: 700;
     }
     .btn {
       display: inline-block;
       margin-top: 10px;
-      padding: 12px 22px;
+      padding: 12px 24px;
       background: #111;
       color: #fff;
       text-decoration: none;
       border-radius: 999px;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>💍 婚礼模板商店</h1>
-    <p>高质量婚礼请柬、誓言卡、菜单、桌卡与感谢卡模板</p>
+    <p class="subtitle">高质量婚礼请柬、誓言卡、菜单、桌卡与感谢卡模板</p>
 
-    <div class="card">
-      <h2>极简婚礼模板</h2>
-      <p>包含：请柬 / 誓言卡 / 菜单 / 桌卡 / 感谢卡</p>
-      <div class="price">￥29</div>
-      <a class="btn" href="#">立即购买</a>
+    <div class="grid">
+      <div class="card">
+        <h2>极简婚礼模板</h2>
+        <div class="tag">简洁 · 清爽 · 百搭</div>
+        <p class="desc">包含：请柬 / 誓言卡 / 菜单 / 桌卡 / 感谢卡</p>
+        <div class="price">￥29</div>
+        <a class="btn" href="#">立即购买</a>
+      </div>
+
+      <div class="card">
+        <h2>浪漫婚礼模板</h2>
+        <div class="tag">柔和 · 温柔 · 氛围感</div>
+        <p class="desc">适合花艺婚礼与轻法式婚礼风格，整体更温柔浪漫。</p>
+        <div class="price">￥39</div>
+        <a class="btn" href="#">立即购买</a>
+      </div>
+
+      <div class="card">
+        <h2>高级感婚礼模板</h2>
+        <div class="tag">现代优雅 · 轻奢留白</div>
+        <p class="desc">适合酒店婚礼、宴会厅婚礼与轻奢风婚礼场景，整体克制、精致、有高级感。</p>
+        <div class="price">￥49</div>
+        <a class="btn" href="#">立即购买</a>
+      </div>
     </div>
   </div>
 </body>
